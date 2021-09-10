@@ -3,6 +3,12 @@
     "type": "library",
     "description": "A Zipkin bridge with OpenTracing",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/davidteal/zipkin-php"
+        }
+    ],
     "authors": [
         {
             "name": "José Carlos Chávez",
@@ -12,7 +18,7 @@
     "require": {
         "php": "~7.1 || ^8.0",
         "opentracing/opentracing": "^1.0.1",
-        "openzipkin/zipkin": "dev-master"
+        "openzipkin/zipkin": "dev-php8_test"
     },
     "provide": {
         "opentracing/opentracing": "dev-master"
